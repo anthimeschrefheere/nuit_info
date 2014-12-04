@@ -32,15 +32,15 @@ Lieu: Jadielle
  
 Nom: Olga Olaf
 Specialite: Specialiste Pokemon Glace
-Lieu: Ile Mandarine 
+Lieu: Mont Selenite
  
 Nom: Aldo Kent
 Specialite: Specialiste Pokemon Combat
-Lieu: Kanto
+Lieu: Safrania
  
 Nom: Agatha Blanc
 Specialite: Specialiste Pokemon Spectre
-Lieu: Kanto
+Lieu: Iles Ecume
  
 Nom: Peter Targaryen
 Specialite: Specialiste Pokemon Dragon
@@ -48,4 +48,4 @@ Lieu: Jadielle
 
 Nom: Professeur Samuel Chen
 Specialite: Generaliste
-Lieu: Kanto
+Lieu: Bourg Palette
