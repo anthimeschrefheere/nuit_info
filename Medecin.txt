@@ -1,0 +1,51 @@
+Nom: Pierre Roc 
+Specialite: Specialiste Pokemon Roche
+Lieu: Argenta
+ 
+Nom: Ondine Curry
+Specialite: Specialiste Pokemon Eau
+Lieu: Azuria
+ 
+Nom: Bob Eclair
+Specialite: Specialiste Pokemon Electrique
+Lieu: Carmin-sur-Mer.
+ 
+Nom: Erika Tully
+Specialite: Specialiste Pokemon Plante
+Lieu: Celadopole
+ 
+Nom: Koga Cigue
+Specialite: Specialiste Pokemon Poison
+Lieu: Parmanie
+ 
+Nom: Morgane Freud
+Specialite: Specialiste Pokemon Psy
+Lieu: Safrania
+ 
+Nom: Auguste Allerdyce
+Specialite: Specialiste Pokemon Feu
+Lieu: Cramois Ile
+ 
+Nom: Giovanni Tremble
+Specialite: Specialiste Pokemon Sol
+Lieu: Jadielle
+ 
+Nom: Olga Olaf
+Specialite: Specialiste Pokemon Glace
+Lieu: Ile Mandarine 
+ 
+Nom: Aldo Kent
+Specialite: Specialiste Pokemon Combat
+Lieu: Kanto
+ 
+Nom: Agatha Blanc
+Specialite: Specialiste Pokemon Spectre
+Lieu: Kanto
+ 
+Nom: Peter Targaryen
+Specialite: Specialiste Pokemon Dragon
+Lieu: Jadielle
+
+Nom: Professeur Samuel Chen
+Specialite: Generaliste
+Lieu: Kanto
