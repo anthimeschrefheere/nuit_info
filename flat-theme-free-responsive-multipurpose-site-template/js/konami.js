@@ -9,19 +9,23 @@
     }
     var play = (function() {
         var audio = document.createElement('audio');
-        return function(sound) {
+        return function(sound, callback) {
             audio.src = 'sounds/konami/' + sound;
             audio.play();
+            audio.addEventListener('ended', function() {
+                if (callback) callback();
+                audio.removeEventListener('ended', this);
+            });
         };
     })();
     var notify = (function() {
-        return function(title, body, icon, sound) {
+        return function(title, body, icon, sound, callback) {
             if (window.Notification && window.Notification.permission === 'granted') {
                 new window.Notification(title, {body: body, icon: 'images/konami/' + icon});
             } else {
                 alert(title + '\n' + body);
             }
-            if (sound) play(sound);
+            if (sound) play(sound, callback || null);
         };
     })();
     var konami = (function() {
@@ -47,14 +51,13 @@
     //trololo
     var trololo = function() {
         konami.image.src = 'images/konami/trololo.gif';
-        play('trololo.ogg');
-        konami.dom.classList.remove('hidden');
-        konami.dom.style.background = 'white';
-        setTimeout(function() {
+        play('trololo.ogg', function() {
             konami.dom.style.background = '';
             konami.dom.classList.add('hidden');
             konami.image.src = '';
-        }, 18000);
+        });
+        konami.dom.classList.remove('hidden');
+        konami.dom.style.background = 'white';
     };
     cheet('t r o l o l o', {done: trololo});
     cheet('t r o l l', {done: trololo});
@@ -62,18 +65,29 @@
     cheet('h a p p y', {
         done: function() {
             konami.image.src = 'images/konami/happy.gif';
-            play('happy.ogg');
+            play('happy.ogg', function() {
+                konami.dom.classList.add('hidden');
+                konami.image.src = '';
+                konami.dom.style.background = '';
+                konami.dom.style.transition = '';
+                clearInterval(interval);
+            });
             konami.dom.classList.remove('hidden');
             konami.dom.style.transition = 'background 0.5s linear';
             var interval = setInterval(function() {
                 konami.dom.style.background = 'hsl(' + Math.floor(Math.random() * 360) + ', 80%, 50%)';
             }, 1000);
-            setTimeout(function() {
-                konami.dom.classList.add('hidden');
-                konami.image.src = '';
-                konami.dom.style.background = '';
-                clearInterval(interval);
-            }, 12000);
         }
     });
+    //barrel roll
+    var barrelRoll = function() {
+        document.body.style.transition = 'transform 2s linear';
+        document.body.style.transform = 'rotate(360deg)';
+        setTimeout(function() {
+            document.body.style.transition = '';
+            document.body.style.transform = '';
+        }, 2100);
+    };
+    cheet('d o a b a r r e l r o l l', {done: barrelRoll});
+    cheet('d o space a space b a r r e l space r o l l', {done: barrelRoll});
 })();
