@@ -1,0 +1,23 @@
+
+@font-face {
+font-family: 'Beeb';
+src: url('fonts/beeb.eot');
+src: url('fonts/beeb.eot?#iefix') format('embedded-opentype'),
+url('fonts/beeb.woff') format('woff'),
+url('fonts/beeb.ttf') format('truetype'),
+url('fonts/beeb.svg#beebregular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+body.minitel *:not(.icon-md):not(i) {
+    font-family: Beeb, Courier, monospace;
+    font-weight: bolder;
+    background-color: #0E0F11;
+    color: #C4F4FF;
+    font-size: 16px;
+}
+
+body.minitel .carousel * {
+    background-image: none !important;
+}
